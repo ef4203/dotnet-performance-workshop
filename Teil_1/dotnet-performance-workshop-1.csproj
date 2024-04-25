@@ -3,9 +3,12 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net8.0</TargetFramework>
-        <RootNamespace>dotnet_performance_workshop_1</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.Runtime.Caching" Version="8.0.0" />
+    </ItemGroup>
 
 </Project>

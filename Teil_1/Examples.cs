@@ -4,7 +4,7 @@ public class Examples
 {
     public static readonly double[] ExampleInput1 = [1.23, 3.141, 23.1, 29.3, 17.01, 4.23, 5.13, 6.132, 9.34];
 
-    public static double[] DiscreteSignalQuadratureAmplitudeModulation(double[] inputSignal)
+    public static double[] DiscreteSignalQuadratureAmplitudeModulation(in double[] inputSignal)
     {
         var resultLen = inputSignal.Length / 2 + inputSignal.Length % 2;
         var result = new double[resultLen];
