@@ -6,8 +6,8 @@ public class Program
 
     public static void Main(string[] args)
     {
-        Thread thread1 = new Thread(IncrementCounter);
-        Thread thread2 = new Thread(IncrementCounter);
+        var thread1 = new Thread(IncrementCounter);
+        var thread2 = new Thread(IncrementCounter);
 
         thread1.Start();
         thread2.Start();
