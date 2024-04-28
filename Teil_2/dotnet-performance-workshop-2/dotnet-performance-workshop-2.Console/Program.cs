@@ -1,7 +1,7 @@
 ﻿namespace EFK.DotnetPerformanceWorkshop.Part2.Console;
 
-using BenchmarkDotNet.Running;
 using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Running;
 
 [MemoryDiagnoser]
 public class Program
@@ -33,5 +33,21 @@ public class Program
     public void Easy_Original()
     {
         ExampleEasyOriginal.TopData(ExampleEasyOriginal.ExampleInput);
+    }
+
+    [Benchmark]
+    public void Fibonacci()
+    {
+        ExampleFibonacci.Fibonacci(4);
+        ExampleFibonacci.Fibonacci(7);
+        ExampleFibonacci.Fibonacci(13);
+    }
+
+    [Benchmark]
+    public void Fibonacci_Original()
+    {
+        ExampleFibonacciOriginal.Fibonacci(4);
+        ExampleFibonacciOriginal.Fibonacci(7);
+        ExampleFibonacciOriginal.Fibonacci(13);
     }
 }
